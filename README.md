@@ -1,4 +1,4 @@
-# E-Commerce Backend | ☚(ﾟヮﾟ☚)
+# E-Commerce Backend | ☚(ㆆヮㆆ☚)
 
 ## Acceptance Criteria
 As a __manager__ at an __internet retail company__,

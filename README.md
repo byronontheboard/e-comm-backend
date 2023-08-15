@@ -21,3 +21,6 @@ __SO THAT__ my company can compete with other e-commerce companies.
 
 ***WHEN*** I test API POST, PUT, and DELETE routes in Insomnia Core,
 - [x] ***THEN*** I am able to successfully create, update, and delete data in my database.
+
+## GitHub
+https://github.com/byronontheboard 

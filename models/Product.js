@@ -18,6 +18,7 @@ Product.init(
     // define columns
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
@@ -49,10 +50,5 @@ Product.init(
     modelName: 'product',
   }
 );
-
-// Associate Product with Tag through the ProductTag model
-Product.belongsToMany(Tag, { through: ProductTag });
-
-Product.belongsTo(Category, { foreignKey: 'category_id' });
 
 module.exports = Product;

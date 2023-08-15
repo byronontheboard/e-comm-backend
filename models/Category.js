@@ -12,6 +12,7 @@ Category.init(
     // define columns
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
@@ -28,11 +29,5 @@ Category.init(
     modelName: 'category',
   }
 );
-
-// Define relationships after initializing Category model
-Category.hasMany(Product, {
-  // This will be the foreign key in the Product model
-  foreignKey: 'category_id', 
-});
 
 module.exports = Category;

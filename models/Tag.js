@@ -9,6 +9,7 @@ Tag.init(
     // define columns
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
@@ -25,7 +26,5 @@ Tag.init(
     modelName: 'tag',
   }
 );
-
-Tag.belongsToMany(Product, { through: ProductTag });
 
 module.exports = Tag;

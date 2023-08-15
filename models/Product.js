@@ -6,6 +6,9 @@ const sequelize = require('../config/connection');
 // Import the Category model
 const Category = require('./Category'); 
 
+// Import the Tag model
+const Tag = require('./Tag');
+
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
 
@@ -46,6 +49,9 @@ Product.init(
     modelName: 'product',
   }
 );
+
+// Associate Product with Tag through the ProductTag model
+Product.belongsToMany(Tag, { through: ProductTag });
 
 Product.belongsTo(Category, { foreignKey: 'category_id' });
 
